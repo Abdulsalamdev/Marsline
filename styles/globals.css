@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.house {
+  background-image: url("/images/house.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: auto;
+  height: 40vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.marquees {
+  animation-name: marquees;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+}
+
+.bg {
+  background-image: url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+}
+
+@keyframes marquees {
+  from {
+    transform: translateX(0px);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  to {
+    transform: translateX(-1450px);
+  }
 }
