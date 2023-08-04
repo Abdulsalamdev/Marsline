@@ -71,7 +71,7 @@ export function Grow() {
 
 export function Give() {
   return (
-    <div className="pb-[70px]">
+    <div className="pb-[clamp(20px,4.5vw,70px)]">
       <div className="house flex justify-end items-center">
         <div className="w-[clamp(70px,6.25vw,100px)] h-auto mr-[-20px]">
           <Image
@@ -291,7 +291,7 @@ export function Ourpower() {
         <p className="text-[#2C2C2C] text-[clamp(20px,3.5vw,50px)] w-[190px] font-Plus font-bold leading-[50px]">
           Detailed Review
         </p>
-        <div className="flex gap-[70px] flex-wrap">
+        <div className="flex gap-[clamp(20px,4.5vw,70px)] flex-wrap">
           <p className="max-w-[470px] text-[#7C7C7C] font-Plus text-[clamp(17px,1.6px,25px)]">
             Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit,
             orci cum aptent scelerisque tortor morbi sed cras turpis duis augue
@@ -304,7 +304,7 @@ export function Ourpower() {
         <p className="text-[#2C2C2C] text-[clamp(20px,3.5vw,50px)] w-[190px] font-Plus font-bold leading-[50px]">
           Fast Clarify
         </p>
-        <div className="flex gap-[70px] flex-wrap">
+        <div className="flex gap-[clamp(20px,4.5vw,70px)] flex-wrap">
           <p className="max-w-[470px] text-[#7C7C7C] font-Plus text-[clamp(17px,1.6px,25px)]">
             Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit,
             orci cum aptent scelerisque tortor morbi sed{" "}
@@ -316,7 +316,7 @@ export function Ourpower() {
         <p className="text-[#2C2C2C] text-[clamp(20px,3.5vw,50px)] w-[190px] font-Plus font-bold leading-[50px]">
           Super Organized
         </p>
-        <div className="flex gap-[70px] flex-wrap">
+        <div className="flex gap-[clamp(20px,4.5vw,70px)] flex-wrap">
           <p className="max-w-[470px] text-[#7C7C7C] font-Plus text-[clamp(17px,1.6px,25px)]">
             Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit,
             orci cum aptent scelerisque tortor morbi sed cras turpis duis augue
