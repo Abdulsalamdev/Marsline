@@ -284,8 +284,8 @@ export function Ourpower() {
         </div>
       </div>
       <div className="flex gap-[50px] flex-wrap pb-[50px]">
-        <img src="/images/ontable.png" alt="" />
-        <img src="/images/complete.png" alt="" />
+        <img src="/images/ontable.png" alt="" className="w-[300px]" />
+        <img src="/images/complete.png" alt="" className="" />
       </div>
       <div className="flex justify-between items-center flex-wrap pb-[70px]">
         <p className="text-[#2C2C2C] text-[clamp(20px,3.5vw,50px)] w-[190px] font-Plus font-bold leading-[50px]">
