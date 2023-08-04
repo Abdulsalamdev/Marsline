@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Hambuger } from "./img";
+import Image from "next/image";
 
 const list: string[] = ["Products", "pricing", "partner", "About us"];
 
@@ -73,7 +74,12 @@ export function Give() {
     <div className="pb-[70px]">
       <div className="house flex justify-end items-center">
         <div className="w-[clamp(70px,6.25vw,100px)] h-auto mr-[-20px]">
-          <img src="./images/business.png" alt="" />
+          <Image
+            src={"/images/business.png"}
+            alt={""}
+            width={100}
+            height={100}
+          />
         </div>
       </div>
     </div>
@@ -84,11 +90,11 @@ export function Give() {
 export function Marquee() {
   return (
     <div className="marquees w-[90%] m-auto flex justify-between pb-[70px] overflow-hidden">
-      <img src="/images/booking.png" alt="" className="w-[130px] h-auto" />
-      <img src="/images/filckr.png" alt="" className="w-[130px] h-auto" />
-      <img src="/images/pinterest.png" alt="" className="w-[130px] h-auto" />
-      <img src="/images/spotify.png" alt="" className="w-[130px] h-auto" />
-      <img src="/images/tokopedia.png" alt="" className="w-[130px] h-auto" />
+      <Image src={"/images/booking.png"} width={130} height={130} alt={""} />
+      <Image src={"/images/filckr.png"} width={130} height={130} alt={""} />
+      <Image src={"/images/pinterest.png"} width={130} height={130} alt={""} />
+      <Image src={"/images/spotify.png"} width={130} height={130} alt={""} />
+      <Image src={"/images/tokopedia.png"} width={130} height={130} alt={""} />
     </div>
   );
 }
