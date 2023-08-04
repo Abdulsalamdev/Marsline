@@ -16,7 +16,7 @@ export function Navbar() {
         {list.map((ele) => (
           <p
             className="text-[#979797] font-Plus font-semibold text-[18px] hover:text-[#DA017F]"
-            key={1}
+            key={ele}
           >
             {ele}
           </p>
@@ -105,11 +105,11 @@ export function Workflow() {
   return (
     <div className="w-[90%] m-auto flex gap-[40px] pb-[70px] flex-wrap justify-between">
       <div>
-        <img src="/images/room.png" alt="" className="w-[400px]" />
+        <Image src={"/images/room.png"} width={400} height={100} alt={""} />
       </div>
       <div>
         <p className="flex gap-[15px] pb-[10px] items-center">
-          <img src="/images/Line.png" alt="" className="h-[2px]" />
+          <Image src={"/images/Line.png"} width={100} height={2} alt="" />
           <span className="text-[#2C2C2c] font-Plus text-[28px] font-medium">
             Our Workflow
           </span>
@@ -119,8 +119,10 @@ export function Workflow() {
         </p>
         <div className="flex gap-[30px] items-center py-[30px] flex-wrap">
           <div className="flex gap-[10px] items-center bg-[#F1F1F1] p-[10px] rounded-full">
-            <img
-              src="/images/change.png"
+            <Image
+              src={"/images/change.png"}
+              width={50}
+              height={50}
               alt=""
               className="bg-[#000] p-[10px] rounded-full"
             />
@@ -129,18 +131,24 @@ export function Workflow() {
             </span>
           </div>
           <div className="bg-[#F1F1F1] p-[10px] rounded-full">
-            <img src="/images/frame1.png" alt="" />
+            <Image src={"/images/frame1.png"} width={30} height={30} alt="" />
           </div>
           <div className="bg-[#F1F1F1] p-[10px] rounded-full">
-            <img src="/images/frame2.png" alt="" />
+            <Image width={30} height={30} src="/images/frame2.png" alt="" />
           </div>
           <div className="bg-[#F1F1F1] p-[10px] rounded-full">
-            <img src="/images/frame3.png" alt="" />
+            <Image width={30} height={30} src="/images/frame3.png" alt="" />
           </div>
         </div>
         <div className="flex gap-[15px] items-center pb-[30px]">
-          <img src="/images/play.png" alt="" className="w-[50px] h-auto" />
-          <span className="text-[#2C2C2C] text-[clamp(20px,2vw,31px)] w-[192px] font-Plus font-bold">
+          <Image
+            width={70}
+            height={70}
+            src="/images/play.png"
+            alt=""
+            className="w-[50px] h-auto"
+          />
+          <span className="text-[#2C2C2C] text-[clamp(20px,2vw,31px)] w-[270px] font-Plus font-bold">
             Explaining what you need
           </span>
         </div>
@@ -179,7 +187,8 @@ export function Studies() {
       <div>
         {" "}
         <p className="flex gap-[15px] pb-[10px] items-center">
-          <img src="/images/Line.png" alt="" className="h-[2px]" />
+          <Image src={"/images/Line.png"} width={100} height={2} alt="" />
+
           <span className="text-[#2C2C2c] font-Plus text-[28px] font-medium">
             Our Workflow
           </span>
@@ -260,11 +269,12 @@ export function Ourpower() {
     >
       <div className="flex flex-col gap-[15px] justify-center items-center">
         <div className="flex gap-[10px] items-center">
-          <img src="/images/Line.png" alt="" className="h-[2px]" />
+          <Image src={"/images/Line.png"} width={100} height={2} alt="" />
+
           <p className="text-[#2C2C2C] font-Plus text-[25px] font-medium">
             Our Power
           </p>
-          <img src="/images/Line.png" alt="" className="h-[2px]" />
+          <Image src={"/images/Line.png"} width={100} height={2} alt="" />
         </div>
         <div
           className="text-[#2C2C2C] text-center text-[clamp(30px,2.5vw,44px)] font-Plus font-bold max-w-[800px] pb-[50px]
@@ -328,7 +338,10 @@ export function Hero() {
       <div className="flex justify-between items-center flex-wrap pb-[40px] border-b-2 border-b-[#B4B4B4] gap-[20px]">
         <div className="flex flex-wrap gap-[clamp(20px,2.4vw,40px)] ">
           {blog.map((ele) => (
-            <p className="text-[clamp(20px,1.7vw,25px)] font-sanstext-black ">
+            <p
+              className="text-[clamp(20px,1.7vw,25px)] font-sanstext-black "
+              key={ele}
+            >
               {ele}
             </p>
           ))}
