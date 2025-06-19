@@ -1,48 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { Hambuger } from "./img";
 import Image from "next/image";
-
-const list: string[] = ["Products", "pricing", "partner", "About us"];
-
-//navigation section
-export function Navbar() {
-  const [visible, setVisible] = useState(false);
-  return (
-    <div className="w-[90%] m-auto flex justify-between items-center pt-[10px]">
-      <div className="text-[26px] text-black font-Plus font-semibold ">
-        <span className="text-[#DA017F] text-[26px] ">Mars</span>line
-      </div>
-      <div className="hidden gap-[40px] md:flex">
-        {list.map((ele) => (
-          <p
-            className="text-[#979797] font-Plus font-semibold text-[18px] hover:text-[#DA017F]"
-            key={ele}
-          >
-            {ele}
-          </p>
-        ))}
-      </div>
-      <div>
-        <button className="rounded-[16px] p-[10px] flex items-center bg-[#DA017F] text-white">
-          Get Started free
-        </button>
-      </div>
-      <div
-        className="flex md:hidden relative"
-        onClick={() => setVisible(!visible)}
-      >
-        <Hambuger />
-        {visible ? (
-          <div className="flex flex-col gap-[20px] top-[50px] left-[-50px] bg-[#DA017F] text-white text-[14px] absolute p-[15px] rounded-[20px]">
-            {list.map((pro) => (
-              <div key={1}>{pro}</div>
-            ))}
-          </div>
-        ) : null}
-      </div>
-    </div>
-  );
-}
 
 //features
 export function Grow() {
@@ -225,6 +184,7 @@ export function Review() {
             </p>
           </div>
         </div>
+  
         <img src="/images/computer.png" alt="" />
         <img src="/images/call.png" alt="" />
         <div className="bg-[#DA017F] flex grow">

@@ -3,13 +3,14 @@ import {
   Grow,
   Hero,
   Marquee,
-  Navbar,
+
   Ourpower,
   OverView,
   Review,
   Studies,
   Workflow,
 } from "@/components/home/home";
+import { Navbar } from "@/components/home/Navbar";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +18,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="">
-      <Navbar />
+     <Navbar />
       <Grow />
       <Give />
       <Marquee />
