@@ -3,8 +3,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars } from 'react-icons/fa';
+import Link from 'next/link';
 
-const menuItems = ['Products', 'Pricing', 'Partner', 'About Us'];
+const menuItems = [
+    {label: "Product", href: "#product"},
+     {label: "Pricing", href: "#pricing"},
+      {label: "Partner", href: "#partner"},
+       {label: "About Us", href: "#about"},
+    
+];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -31,12 +38,13 @@ export function Navbar() {
       {/* Desktop Menu */}
       <nav className="hidden md:flex gap-[40px]">
         {menuItems.map((item) => (
-          <p
-            key={item}
+          <Link
+          href={item.href}
+            key={item.label}
             className="text-[#979797] font-Plus font-semibold text-[18px] hover:text-[#DA017F] cursor-pointer transition-colors"
           >
-            {item}
-          </p>
+            {item.label}
+          </Link>
         ))}
       </nav>
 
@@ -61,13 +69,14 @@ export function Navbar() {
               className="absolute right-0 top-[45px] bg-[#DA017F] text-white rounded-[16px] shadow-md p-4 w-[200px] flex flex-col gap-4 overflow-hidden"
             >
               {menuItems.map((item) => (
-                <p
-                  key={item}
+                <Link
+                href={item.href}
+                  key={item.label}
                   onClick={() => setOpen(false)}
                   className="cursor-pointer hover:text-black transition-colors"
                 >
-                  {item}
-                </p>
+                  {item.label}
+                </Link>
               ))}
               <button className="mt-2 bg-white text-[#DA017F] font-semibold px-4 py-2 rounded-[12px] hover:bg-[#ffe4f0] transition">
                 Get Started Free

@@ -1,13 +1,9 @@
+import { OverView, Studies, Review, Ourpower } from "@/components/home/About";
+import { Hero } from "@/components/home/Hero";
 import {
   Give,
   Grow,
-  Hero,
   Marquee,
-
-  Ourpower,
-  OverView,
-  Review,
-  Studies,
   Workflow,
 } from "@/components/home/home";
 import { Navbar } from "@/components/home/Navbar";
